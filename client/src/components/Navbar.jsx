@@ -44,7 +44,6 @@ const Navbar = () => {
         const handleScroll = () => {
             setIsScrolled(window.screenY > 10);
         };
-        console.log("isscroll",isScrolled, window.screenY, location.pathname);
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
         
